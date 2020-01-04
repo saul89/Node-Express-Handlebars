@@ -1,0 +1,13 @@
+body {
+  background: yellow;
+  text-align: center;
+}
+
+textarea {
+  resize: vertical;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
