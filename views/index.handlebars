@@ -9,10 +9,16 @@
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li>
-                    {{burger_name}}
-                    <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-                        Devour it!
-                    </button>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                                Devour it!
+                            </button>
+                        </div>
+                        <div class="col-sm-8 leftBurger">
+                            {{burger_name}}
+                        </div>
+                    </div>
                 </li>
                 {{/unless}}
                 {{/each}}
@@ -37,6 +43,7 @@
     <div class="form-group">
         <textarea class="form-control" rows="1" id="burger"></textarea>
     </div>
-
-    <button type="submit">Submit</button>
+    <br>
+    <button class="btn" type="submit" name="submit">Submit</button> <br><br>
+    <label for="submit">Enter a burger you want to eat Click the "Submit" button!</label>
 </form>
